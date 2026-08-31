@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Radhika Gaonkar | RL, Agents &amp; Post-Training Research</title>
+<meta content="Radhika Gaonkar is an applied AI researcher at Prime Intellect working on reinforcement learning, post-training, verifiers, and evaluation for long-horizon language-model agents." name="description"/>
+<meta content="Radhika Gaonkar, Prime Intellect, reinforcement learning, agentic RL, post-training, RLVR, verifiers, reward design, language model evaluation, AI agents" name="keywords"/>
+<meta content="Radhika Gaonkar" name="author"/>
+<meta content="index, follow" name="robots"/>
+<meta content="#815f41" name="theme-color"/>
+<link href="https://rgaonkar.github.io/" rel="canonical"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<meta content="Radhika Gaonkar | RL, Agents &amp; Post-Training Research" property="og:title"/>
+<meta content="Applied AI research on reinforcement learning, post-training, verifiers, and evaluation for long-horizon agents." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://rgaonkar.github.io/" property="og:url"/>
+<meta content="https://rgaonkar.github.io/favicon.svg" property="og:image"/>
+<meta content="Radhika Gaonkar" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Radhika Gaonkar | RL, Agents &amp; Post-Training Research" name="twitter:title"/>
+<meta content="Applied AI research on reinforcement learning, post-training, verifiers, and evaluation for long-horizon agents." name="twitter:description"/>
+<meta content="https://rgaonkar.github.io/favicon.svg" name="twitter:image"/>
+<script>
+      document.documentElement.classList.add("js");
+    </script>
+<script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Radhika Gaonkar",
+        "url": "https://rgaonkar.github.io/",
+        "jobTitle": "Applied Researcher - Long Horizon Agents",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Prime Intellect"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Francisco",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/rgaonkar/",
+          "https://scholar.google.com/citations?user=or203g8AAAAJ&hl=en",
+          "https://github.com/RGaonkar",
+          "https://x.com/GaonkarRadhika"
+        ]
+      }
+    </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="#about">Radhika Gaonkar</a>
+<button aria-controls="primary-navigation" aria-expanded="false" class="menu-toggle" type="button">
+<span class="menu-toggle-label">Menu</span>
+<span aria-hidden="true" class="menu-icon"></span>
+</button>
+<nav aria-label="Primary" id="primary-navigation">
+<a href="#about">About</a>
+<a href="#agenda">Research</a>
+<a href="#contributions">Selected Work</a>
+<a href="#papers">Publications</a>
+<a href="#talks">Talks</a>
+<a href="#service">Service</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+<main class="page" id="main-content">
+<section class="hero" id="about">
+<div class="hero-grid">
+<div class="hero-copy">
+<h1 class="reveal">Radhika Gaonkar</h1>
+<p class="role reveal">Applied Researcher · Prime Intellect</p>
+<p class="intro reveal">
+I’m currently an Applied Researcher at Prime Intellect, where I work on post-training, synthetic data, and benchmarks for building robust long-horizon agents. My research focuses on reinforcement learning, instruction tuning, verifiers, and evaluation, with a particular emphasis on reward hacking and verifier failure modes in large-scale RL environments and post-training runs. Previously at Microsoft, I led applied research across Microsoft 365 Copilot and Frontier Tuning, working on post-training, reasoning, personalization, hallucination detection, and domain-adaptive agents.
+</p>
+<div class="cta-row reveal">
+<a class="btn btn-primary" href="#contributions">Selected Work</a>
+<a class="btn btn-outline" href="RadhikaGaonkar2026.pdf" target="_blank">CV <span aria-hidden="true">↗</span></a>
+<a class="btn btn-outline" href="https://github.com/RGaonkar" rel="noopener noreferrer" target="_blank">GitHub</a>
+</div>
+</div>
+<aside class="portrait-block reveal">
+<img alt="Portrait of Radhika Gaonkar" src="portrait.jpg"/>
+<ul class="portrait-notes">
+<li>San Francisco, CA</li>
+</ul>
+<div class="portrait-links">
+<a href="https://www.linkedin.com/in/rgaonkar/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a href="https://scholar.google.com/citations?user=or203g8AAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">Scholar</a>
+<a href="https://github.com/RGaonkar" rel="noopener noreferrer" target="_blank">GitHub</a>
+<a href="https://x.com/GaonkarRadhika" rel="noopener noreferrer" target="_blank">X</a>
+</div>
+</aside>
+</div>
+</section>
+
+<section class="section" id="agenda">
+<div class="section-grid rail-layout">
+<div class="section-head reveal rail-head">
+<p class="kicker">Current focus</p>
+<p class="section-intro">
+              My research focuses on self-improving agents: how they can generate useful
+              experience, learn continuously from interaction, and become more capable over time.
+              I’m particularly interested in the learning signals that enable this—rewards,
+              verifiers, credit assignment, and trajectory-level evaluation—and in making them
+              robust to reward hacking and other failure modes.
+            </p>
+</div>
+<div class="feature-list rail-content">
+<article class="feature reveal">
+<span>01</span>
+<h3>Agentic post-training for long-horizon agents</h3>
+<p>
+                I work across the post-training loop—supervised fine-tuning, on-policy data,
+                reinforcement learning, synthetic task generation, environments, and
+                evaluation—to improve agents that plan, use tools, recover from mistakes, and
+                make progress over many steps. I’m especially interested in trajectory-level
+                credit assignment and whether learned behaviors generalize across tasks,
+                environments, and tool interfaces.
+              </p>
+</article>
+<article class="feature reveal">
+<span>02</span>
+<h3>Rewards, verifiers, and process signals</h3>
+<p>
+                Automated rewards make large-scale RL possible, but they also create new failure
+                modes. I build and stress-test verifiers, compare outcome and trajectory-level
+                signals, and look for proxy optimization, reward hacking, and brittle evaluation
+                before those signals are used to train a stronger policy.
+              </p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section" id="contributions">
+<div class="section-grid rail-layout">
+<div class="section-head reveal rail-head">
+<p class="kicker">Selected work</p>
+<p class="section-intro">
+              Selected work across Prime Intellect and Microsoft, spanning agentic RL, evaluation,
+              reasoning, personalization, and production ML.
+            </p>
+</div>
+<div class="feature-list rail-content">
+<article class="feature reveal">
+<span>Prime Intellect · Agentic RL</span>
+<h3>Stress-testing rewards for long-horizon agents</h3>
+<p>
+                Built an experimental workflow for testing whether an automated reward remains
+                trustworthy under optimization pressure. The approach uses controlled probes,
+                defense ablations, hardened re-scoring, and trajectory inspection to surface
+                verifier brittleness and reward hacking before scaling an RL run. I open-sourced
+                the reference implementation for SWE-style agent tasks and presented the work at
+                Ray Summit 2026.
+              </p>
+<p>
+                Another focus of my work is scalable synthetic task generation for training and
+                evaluating long-horizon agents. I build pipelines for generating realistic,
+                multi-step workflows in simulated tool environments, with structured world states
+                and programmatically verifiable outcomes. I’m particularly interested in
+                generating tasks that span a wide range of difficulty and expose failures in
+                planning, tool use, and long-horizon execution.
+              </p>
+<a href="https://github.com/RGaonkar/ray-agent-reward-lab" rel="noopener noreferrer" target="_blank">Code</a>
+              ·
+<a href="https://register.linuxfoundation.org/event/ray-summit-2026/session-catalogue?session=170a5ba4-340b-4594-ba56-d0ec9111dc99" rel="noopener noreferrer" target="_blank">Talk</a>
+</article>
+
+<article class="feature reveal">
+<span>Microsoft 365 Copilot</span>
+<h3>Post-training and evaluation for reasoning agents</h3>
+<p>
+                Led applied research on post-training and evaluation for Microsoft 365 Copilot,
+                including on-policy distillation and training for tool-using reasoning systems.
+                The work focused on improving response quality, citation accuracy, tool use, and
+                reasoning on complex enterprise tasks while making the resulting behaviors easier
+                to evaluate and iterate on.
+              </p>
+<a href="https://www.microsoft.com/en-us/microsoft-365/copilot/enterprise" rel="noopener noreferrer" target="_blank">Microsoft 365 Copilot</a>
+</article>
+
+<article class="feature reveal">
+<span>Copilot Tuning</span>
+<h3>Multi-turn reasoning for optimization problems</h3>
+<p>
+                Led post-training for a domain-adaptive reasoning agent in Copilot Tuning that
+                formulates planning tasks as optimization problems. I worked across training,
+                synthetic data, and evaluation for multi-turn tasks where the model has to reason
+                over constraints rather than produce a single short answer.
+              </p>
+<a href="https://learn.microsoft.com/en-us/copilot/microsoft-365/copilot-tuning-overview" rel="noopener noreferrer" target="_blank">Copilot Tuning Overview</a>
+</article>
+
+<article class="feature reveal">
+<span>Reliability</span>
+<h3>Efficient routing for hallucination detection</h3>
+<p>
+                Developed an LLM routing framework for hallucination detection in Microsoft 365
+                Copilot that reduced evaluation cost by 60% and latency by 30% without degrading
+                accuracy. The work combined model-quality measurement with the systems constraints
+                required to run evaluators at production scale.
+              </p>
+</article>
+
+<article class="feature reveal">
+<span>Personalization</span>
+<h3>Memory and cross-conversation evaluation</h3>
+<p>
+                Helped ship Copilot memory and built an LLM-based evaluator for measuring
+                personalization across conversations. This work focused on whether a model uses
+                remembered context in ways that are relevant, consistent, and actually helpful to
+                the user.
+              </p>
+<a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/introducing-copilot-memory-a-more-productive-and-personalized-ai-for-the-way-you/4432059" rel="noopener noreferrer" target="_blank">Copilot Memory Announcement</a>
+</article>
+
+<article class="feature reveal">
+<span>Production ML</span>
+<h3>User representations and smart replies in Office 365</h3>
+<p>
+                Earlier in my Microsoft work, I shipped transformer-based user embeddings that
+                improved file-recommendation recall by 23%, and led LoRA-based smart-reply work
+                that increased click-through rate by 3% while model compression reduced production
+                latency by 35%. These projects shaped my interest in closing the loop between
+                research, evaluation, and real user-facing systems.
+              </p>
+<a href="https://arxiv.org/pdf/2111.13999" rel="noopener noreferrer" target="_blank">Related Publication</a>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section section-paper" id="papers">
+<div class="section-grid rail-layout">
+<div class="section-head reveal rail-head">
+<p class="kicker">Research</p>
+<h2>Selected Publications</h2>
+<p class="section-intro">
+              Research spanning agent evaluation, model safety, grounded generation, and
+              sequential decision-making.
+            </p>
+</div>
+<div class="paper-list rail-content">
+<article class="paper-item paper-item-text reveal">
+<div class="paper-copy">
+<span>Agentic Evaluation</span>
+<p class="paper-meta-line">COLM AIMS Workshop · Accepted · 2026</p>
+<h3>TRACE: Diagnosing Verifier Brittleness in Agentic Evaluation</h3>
+<p>
+                  A framework for stress-testing agent verifiers under controlled changes to tasks,
+                  tools, rubrics, and observations. TRACE measures brittleness, transfer, proxy
+                  divergence, reward-hacking risk, and process overfitting before verifier scores
+                  are used for training or deployment.
+                </p>
+</div>
+</article>
+
+<article class="paper-item paper-item-text reveal">
+<div class="paper-copy">
+<span>Safety</span>
+<p class="paper-meta-line">TMLR 2025</p>
+<h3>Permissive Information-flow Analysis for LLMs</h3>
+<p>
+                  Introduces a permissive information-flow framework for controlling sensitive
+                  information in language-model outputs while preserving useful model behavior.
+                </p>
+<a href="https://arxiv.org/abs/2410.03055" rel="noopener noreferrer" target="_blank">Paper</a>
+</div>
+</article>
+
+<article class="paper-item paper-item-text reveal">
+<div class="paper-copy">
+<span>Grounding</span>
+<p class="paper-meta-line">ICLR 2022</p>
+<h3>Knowledge Infused Decoding</h3>
+<p>
+                  Proposes a decoding method that incorporates external knowledge during
+                  generation, enabling language models to use grounded evidence without requiring
+                  the knowledge to be baked into model parameters.
+                </p>
+<a href="https://arxiv.org/pdf/2204.03084.pdf" rel="noopener noreferrer" target="_blank">Paper</a>
+</div>
+</article>
+
+<article class="paper-item paper-item-text reveal">
+<div class="paper-copy">
+<span>NLP</span>
+<p class="paper-meta-line">ACL 2020</p>
+<h3>Modeling Label Semantics for Predicting Emotional Reactions</h3>
+<p>
+                  Studies how semantic representations of emotion labels can improve prediction of
+                  emotional reactions in text, particularly when labels have meaningful structure
+                  that standard classifiers ignore.
+                </p>
+<a href="https://aclanthology.org/2020.acl-main.426/" rel="noopener noreferrer" target="_blank">Paper</a>
+</div>
+</article>
+
+<article class="paper-item paper-item-text reveal">
+<div class="paper-copy">
+<span>Sequential Decision-Making</span>
+<p class="paper-meta-line">Informatica · 2018</p>
+<h3>MDP-based Itinerary Recommendation for Urban Tourists</h3>
+<p>
+                  Models itinerary recommendation as a sequential decision problem, balancing user
+                  preferences with time, location, and transition constraints using a Markov
+                  Decision Process.
+                </p>
+<a href="https://www.informatica.si/index.php/informatica/article/view/2228" rel="noopener noreferrer" target="_blank">Paper</a>
+</div>
+</article>
+<p class="reveal">
+<a class="btn btn-outline" href="https://scholar.google.com/citations?user=or203g8AAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">View Full List on Google Scholar</a>
+</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="talks">
+<div class="section-grid rail-layout">
+<div class="section-head reveal rail-head">
+<p class="kicker">Speaking</p>
+<h2>Talks</h2>
+<p class="section-intro">Selected presentations on agent evaluation, post-training, and reinforcement learning.</p>
+</div>
+<div class="feature-list rail-content">
+<article class="feature reveal">
+<span>Workshop</span>
+<h3>Building Agentic Evaluators for Enterprise LLM Systems</h3>
+<p class="feature-summary">Women Who Code Summit, New York — June 3, 2026</p>
+<p>
+                Design patterns for using agentic evaluators to scale judgment beyond static
+                LLM-as-a-judge pipelines, with a focus on reliability in real enterprise systems.
+              </p>
+<a href="https://events.womenwhocode.com/2026/agenda/speakers/3915423" rel="noopener noreferrer" target="_blank">Session Details</a>
+</article>
+
+<article class="feature reveal">
+<span>Poster Session</span>
+<h3>Robust Evaluators for Long-Horizon Agents</h3>
+<p class="feature-summary">Agentic AI Summit, UC Berkeley RDI — August 2, 2026</p>
+<p>
+                Work on detecting brittle verifier behavior when long-horizon agents are trained
+                against automated rewards.
+              </p>
+</article>
+
+<article class="feature reveal">
+<span>Talk</span>
+<h3>GLM-5 RL Training with vLLM</h3>
+<p class="feature-summary">Ray Summit, San Francisco — August 25, 2026</p>
+<p>
+                A systems-focused discussion of reinforcement-learning training for large language
+                models and the role of high-throughput inference in the post-training stack.
+              </p>
+<a href="https://register.linuxfoundation.org/event/ray-summit-2026/session-catalogue?session=9c7b3c07-7676-4192-bd87-519dd89cfce1" rel="noopener noreferrer" target="_blank">Session Details</a>
+</article>
+
+<article class="feature reveal">
+<span>Talk</span>
+<h3>Reward Stress Tests for Agentic Post-Training with Ray</h3>
+<p class="feature-summary">Ray Summit, San Francisco — August 26, 2026</p>
+<p>
+                A practical workflow for trying to break an automated reward before spending a
+                large RL run optimizing it: controlled probes, defense ablations, hardened
+                re-scoring, and trajectory-level audits for SWE agents.
+              </p>
+<a href="https://register.linuxfoundation.org/event/ray-summit-2026/session-catalogue?session=170a5ba4-340b-4594-ba56-d0ec9111dc99" rel="noopener noreferrer" target="_blank">Session Details</a>
+              ·
+<a href="https://github.com/RGaonkar/ray-agent-reward-lab" rel="noopener noreferrer" target="_blank">Code</a>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section" id="service">
+<div class="section-grid rail-layout">
+<div class="section-head reveal rail-head">
+<p class="kicker">Service</p>
+<h2>Professional Service</h2>
+</div>
+<div class="writing-block reveal rail-content">
+<p>Industry track reviewer for major NLP conferences, including:</p>
+<ul>
+<li>EMNLP 2026</li>
+<li>NAACL 2025</li>
+<li>NAACL 2024</li>
+<li>ACL 2023</li>
+<li>EMNLP 2022</li>
+<li>NAACL 2022</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<div class="contact-block reveal">
+<div>
+<p class="kicker">Contact</p>
+<h2>Get in Touch</h2>
+<p class="section-intro">
+              I’m always happy to connect with researchers and builders thinking about
+              self-improving agents, RL, verifiers, and evaluation, especially where interesting
+              research questions meet real-world systems and training constraints.
+            </p>
+</div>
+<div class="contact-actions">
+<a class="btn btn-primary" href="mailto:radhika.s.gaonkar@gmail.com">Email</a>
+<a class="btn btn-outline" href="https://www.linkedin.com/in/rgaonkar/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<p>© <span id="year"></span> Radhika Gaonkar</p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
